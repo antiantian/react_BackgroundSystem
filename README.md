@@ -1,3 +1,15 @@
+## 技术应用 ##
+```bash
+- react.js
+- react-router
+- react-router-dom
+- fetch.js
+- antd组建
+- mock.js
+- node+express构建假数据
+- react-dnd-html5-backend拖拽
+```
+  
 ## 安装步骤 ##
 	npm install							  // 安装项目依赖，等待安装完成之后
 
@@ -29,6 +41,7 @@
 - [下拉列表](#newselect)
 - [自动文本框](#newautocomplete)
 - [单选按钮组](#newradiogroup)
+- [form表单](#form)
 
 ## 编辑与添加列表 公共组件的使用 ##
 
@@ -311,6 +324,19 @@ aaa
          })  
     }
     
+```
+#  `form`
+
+```bash
+       const WrappedDynamicRule2 = Form.create({
+	  //将属性传递到组件中
+	  mapPropsToFields(props) {
+	    return {
+	      props: props.formState,
+	    };
+	  }
+	})(CreatePay);
+	export default  WrappedDynamicRule2;
 ```
 
 ### 公共状态的使用
