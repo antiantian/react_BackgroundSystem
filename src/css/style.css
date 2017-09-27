@@ -1,0 +1,331 @@
+@import '~antd/dist/antd.css';
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, table, 
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, 
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font-size:14px;}
+select, input, button, button img, label{vertical-align:middle}
+
+html{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;}
+.qc-add-list{position: absolute; top: 18px;right:20px;}
+.qc-operation-box{
+    padding: 2px 5px;
+    border: 1px solid #E7E7E7;
+    background: #F4F4F4;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.addOffcial-Border{
+    border-top: 1px solid #E9E9E9;
+    padding-top: 5px;
+}
+.qc-save{
+    padding-top:10px;
+    border-top:1px solid #E9E9E9;
+    text-align: right;
+    margin-top:30px;
+}
+.ant-form-item{margin-bottom: 12px;}
+/*登录*/
+.qc-from-login{
+    display: block;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    width: 400px;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top:-220px;
+    padding:35px 35px 10px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 25px #cac6c6;
+}
+
+.qc-from-login h3{
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #505458;
+    font-size: 18px;
+}
+
+.qc-from-login input{
+    height: 38px;
+    line-height: 38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #bfcbd9;
+    color: #1f2d3d;
+    display: block;
+    font-size: inherit;
+    outline: 0;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+}
+
+.qc-from-login input:focus {
+    outline: 0;
+    border-color: #20a0ff;
+}
+
+.qc-from-login .login-form-button {
+  width: 100%;
+  height: 40px;
+  margin-top: 18px;
+}
+/*Header*/
+.ant-layout-sider{
+    flex: 0 0 250px !important;
+    width: 250px !important;
+}
+.ant-menu-inline .ant-menu-submenu-title,.ant-menu-sub.ant-menu-inline > .ant-menu-item{
+    line-height: 52px !important;
+    height: 52px !important;
+}
+/*
+.logo {
+    height: 64px;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: hsla(62,77%,76%,.3);
+    border-right-width: 1px;
+    border-right-style: solid;
+    background: #368CBD;
+    color: #fff;
+}*/
+.logo span{font-size: 22px;}
+.ant-layout.ant-layout-has-sider{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.qc-header-logo{
+    height: 60px;
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: hsla(62,77%,76%,.3);
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.qc-header-name{
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}
+
+.qc-header-name em{
+    font-size: 14px;
+    color: #fff;
+    margin-right: 15px;
+    vertical-align: middle;
+    font-style: normal;
+}
+.example-input input{
+  margin-right:10px;
+}
+   .example-input input.mineWidth{
+        width:200px;   
+    }  
+
+
+.deal-title{font-size: 18px; margin-bottom: 20px;}
+
+.transactionBorder{
+    padding: 8px 0;
+    border-top: 1px solid #F7F7F7;
+}
+
+/*设置*/
+.siteSettings h2{
+font-size:16px;
+margin-bottom:20px;
+padding:0 10px;
+}
+.siteSettings ul li{
+font-weight: 700;
+margin-bottom:30px;
+}
+
+.bigsize{
+font-weight: 900;
+}
+.siteSettings .lastBottom{
+margin-bottom:20px;
+padding: 10px;
+border-top: 1px solid #d9d9d9;
+
+}
+.siteSettings .ant-table-thead > tr > th {
+font-weight: 700;
+}
+#daochu,#orderDaochu{
+    color: #fff;
+    background-color: #108ee9;
+    height: 32px;
+    display: inline-block;
+    border-color: #108ee9;
+    border-width: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.minestyle{
+  display: inline-block;
+    /* width: 120px; */
+    text-align: right;
+    margin-right: 20px;
+    line-height: 32px;
+}
+
+.lineDistance{
+    margin:10px 0;
+}
+.contentSpan{
+     display: inline-block;
+     width: 112px; 
+    text-align: right;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1440px) {
+    .contentSpan{
+     display: inline-block;
+       width: 112px;
+     text-align: left;
+      margin-right: 0; 
+ }
+
+   
+}
+.exportForm{
+  width:40px;
+  height:32px;
+
+  display:inline-block;
+  margin-left: 10px;
+  position: relative;
+  top:12px;
+   border-radius: 3px;
+    cursor: pointer;
+}
+.ant-layout{
+    overflow: auto;
+}
+.ant_select_placeholder{
+    display: block!important;
+}
+
+.ant-layout-sider{
+    flex: 0 0 200px !important;
+    width: 200px !important;
+}
+.ant-menu-inline .ant-menu-submenu-title,.ant-menu-sub.ant-menu-inline > .ant-menu-item{
+    line-height: 52px !important;
+    height: 52px !important;
+}
+.logo {
+    height: 64px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: hsla(62,77%,76%,.3);
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    width: 200px;
+    padding-left: 22px;
+}
+.logo span{font-size: 22px;}
+/*2017 88 */
+.zChannel_wrap{
+    padding-top: 10px;
+}
+.zChannel_check{
+    padding: 0;
+}
+.inner-tableul{
+    padding:10px;
+}
+.inner-tableul span{
+    display: inline-block;
+    text-align: right;
+    width: 120px
+}
+.resetTABLE{
+   text-align: center;
+}
+.EA_title{
+    border-bottom: 1px  solid #dfdfdf;
+    margin-bottom: 20px;
+}
+/* use css to set position of modal */
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.vertical-center-modal .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
+.open_close{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -7px;
+}
+.star{
+    color:#f04134;
+    font-weight: normal;
+    padding-right: 4px;
+    line-height: 1;
+    font-family: SimSun;
+    font-size:12px;
+}
+.ant-select-selection-selected-value{
+    font-size:12px;
+}
+.noWrap{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap 
+}
+.inputErrors,.inputErrors:focus,.inputErrors:hover{
+    border-color:#f04134;
+}
+.errorText{
+   line-height:28px;
+   padding-left:5px;
+   color:#f04134;
+   font-size: 12px;
+}
+
+.example-input .ant-input,.example-input .ant-select,.example-input button{
+  margin-bottom: 10px;
+}
+.example-input .ant-calendar-picker-clear,.example-input  .ant-calendar-picker-icon{
+  margin-top: -12px;
+}
+.exportForm{
+  position: static;
+}
