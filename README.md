@@ -1,13 +1,13 @@
 ## 技术应用 ##
 `bash
-  react.js
-  react-router
-  react-router-dom
-  fetch.js
-  antd组建
-  mock.js
-  node+express构建假数据
-  react-dnd-html5-backend拖拽
+- react.js
+- react-router
+- react-router-dom
+- fetch.js
+- antd组建
+- mock.js
+- node+express构建假数据
+- react-dnd-html5-backend拖拽
   `
   
 ## 安装步骤 ##
