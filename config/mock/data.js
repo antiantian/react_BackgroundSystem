@@ -148,7 +148,7 @@ function setchannellist(){
    template={
       "key": 1,
       "settlementCode":"@string('lower', 3, 5)",
-      "name": "@ctitle(2,4)",
+      "name":"@ctitle(2,4)",
       "chanRates": [
         {
           "fee|0.1-5": 1,

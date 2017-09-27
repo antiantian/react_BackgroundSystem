@@ -7,23 +7,18 @@ import SettleList from './deal/settleList';       //交易结算列表
 import FlowDetails from './deal/flowDetails';
 import OffcialList from './official/offcialList';  //合作商
 import AddOffcial from './official/addOffcial';
-import DeployList from './official/deployList';
-import EditDeploy from './official/editDeploy'; 
 import GroupList from './official/groupList';
 import AddGroup from './official/addGroup';
-import AddPartner from './official/addPartner'; 
 import MerchantList from './merchant/merchantList'; //商户
 import MerchantCapital from './merchant/MerchantCapital'; //商户
 import MerchantCapitaDetail from './merchant/MerchantCapitaDetail';
 import AddMerchant from './merchant/addMerchant'; 
-import SiteSettings from './settings/siteSettings'; //设置
 import PaymentWay from './settings/paymentWay';
 import PaymentType from './settings/paymentType';
 import PaymentChannel from './settings/paymentChannel';
 import EditSettlement from './settings/editSettlement';
 import AddPaymentType from './settings/addPaymentType';
 import AddPaymentWay from './settings/addPaymentWay';
-import Bankleitzahl from './settings/bankleitzahl';
 import SettlementList from './settings/settlementList';
 import PaymentConfiguration from './settings/paymentConfiguration';
 import AddPaymentConfiguration from './settings/addPaymentConfiguration';
@@ -57,17 +52,13 @@ class RouteMap extends React.Component {
                   <Route path="/flowDetails/:id" component={FlowDetails} onEnter={requireCredentials}/>
                 </Route>      
                 <Route exact path="/offcialList" component={OffcialList} onEnter={requireCredentials}/>
-                <Route path="/deployList" component={DeployList} onEnter={requireCredentials}/>
                 <Route path="/groupList" component={GroupList} onEnter={requireCredentials}/>
                 <Route path="/addGroup" component={AddGroup} onEnter={requireCredentials}/>
-                <Route path="/editDeploy" component={EditDeploy} onEnter={requireCredentials}/>
                 <Route path="/addOffcial" component={AddOffcial} onEnter={requireCredentials}/>
-                <Route path="/addPartner" component={AddPartner} onEnter={requireCredentials}/>
                 <Route exact path="/merchantList" component={MerchantList} onEnter={requireCredentials}/> 
                 <Route exact path="/merchantCapital" component={MerchantCapital} onEnter={requireCredentials}/>
                 <Route exact path="/merchantCapitaDetail" component={MerchantCapitaDetail} onEnter={requireCredentials}/>
                 <Route path="/addMerchant" component={AddMerchant} onEnter={requireCredentials} />                  
-                <Route exact path="/siteSettings" component={SiteSettings} onEnter={requireCredentials}/>
                 <Route path="/paymentWay" component={PaymentWay}  onEnter={requireCredentials}/>
                 <Route path="/paymentType" component={PaymentType} onEnter={requireCredentials}/>
                 <Route path="/paymentConfiguration" component={PaymentConfiguration} onEnter={requireCredentials}/>
@@ -78,7 +69,6 @@ class RouteMap extends React.Component {
                 <Route path="/addPaymentChannel" component={AddPaymentChannel} onEnter={requireCredentials}/>
                 <Route path="/settlementList" component={SettlementList} onEnter={requireCredentials}/>
                 <Route path="/editSettlement" component={EditSettlement} onEnter={requireCredentials}/>
-                <Route path="/bankleitzahl" component={Bankleitzahl} onEnter={requireCredentials}/>                
           </Route>
           <Route path="/" >
                 <IndexRedirect to="/login" />

@@ -3,8 +3,6 @@
 import ReactDOM from 'react-dom';
 import {hashHistory} from 'react-router';
 import RouteMap from './RouteMap';
-import Mock from './mock';
-Mock.bootstrap();
 class App extends React.Component {
   render() {
     return (

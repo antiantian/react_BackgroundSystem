@@ -55,7 +55,7 @@ class PaymentWay extends React.Component {
             total: json.data[0].sumNum,                          
           })
       },
-      fun201:(json)=>{
+      func201:(json)=>{
           this.setState({
             data: [],
             loading:false,

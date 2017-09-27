@@ -164,12 +164,12 @@ getCurrent=(pathname)=>{
     return (
        <Layout>
             <Header style={{ background: '#368CBD', padding: 0 ,position: 'fixed', width: '100%'}}>
-              <div className="logo">后台系统{hadpathname?"1":"0"}</div>
+              <div className="logo">后台系统</div>
               <div className="qc-header-name">
                 <div style={{ float: 'right', height: 64, marginLeft: 50 }}>
                     <Dropdown overlay={this.menu()}>
                       <a className="ant-dropdown-link" >
-                        <em>您好{nextpathname}，{localStorage.systemtypes}admin：{localStorage.loginId} </em> <Icon type="down" style={{color:'#ffffff'}} />
+                        <em>您好，admin：{localStorage.loginId} </em> <Icon type="down" style={{color:'#ffffff'}} />
                       </a>
                     </Dropdown>
                 </div>

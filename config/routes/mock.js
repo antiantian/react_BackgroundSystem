@@ -184,8 +184,15 @@ router.post('/api/web/admin/getPayChanList', function (req, res) {
   isPage 是否分页 0分页 1不分页 query integer 
   token
   */
-  responseData.data=paychannelData;
-  res.json(responseData)
+  let parentData=paychannelData;
+  var pageNum=req.body.pageNum||''; //2
+ var numPerPage=req.body.numPerPage||''; //10
+ responseData.data=searchData(parentData,pageNum,numPerPage,["name"],req.body);
+ if(responseData.data.length<=0){
+    responseData.code='201';
+    responseData.msg="无数据了";
+ }
+ res.json(responseData)
    return;
 })
 router.post('/api/web/admin/getSettChanList', function (req, res) {
@@ -196,8 +203,16 @@ router.post('/api/web/admin/getSettChanList', function (req, res) {
   isPage 是否分页 0分页 1不分页 query integer 
   token
   */
-  responseData.data=setchannelData;
-  res.json(responseData)
+  let parentData=setchannelData;
+
+  var pageNum=req.body.pageNum||''; //2
+ var numPerPage=req.body.numPerPage||''; //10
+ responseData.data=searchData(parentData,pageNum,numPerPage,["name"],req.body);
+ if(responseData.data.length<=0){
+    responseData.code='201';
+    responseData.msg="无数据了";
+ }
+ res.json(responseData)
    return;
 })
 
@@ -282,7 +297,7 @@ router.post('/api/web/admin/getTypeMethodList', function (req, res) {
  if(type==3){
       parentData=paymentConfigData;
  }
- responseData.data=parentData;
+ responseData.data=searchData(parentData,null,null,[{name:"status",text:"-1"}],req.body);;
  if(responseData.data.length<=0){
     responseData.code='201';
     responseData.msg="无数据了";

@@ -102,7 +102,7 @@ class PaymentChannel extends React.Component {
         <Button type="primary" icon="plus" className="qc-add-list" onClick={this.addBotton}>添加</Button>
         <h2 className="deal-title">支付通道</h2>
        <div className="example-input">
-          <Input size="large" placeholder="支付通道编号" name="name" value={this.state.name} onChange={this.onChangeInput} className="mineWidth" />
+          <Input size="large" placeholder="支付通道名称" name="name" value={this.state.name} onChange={this.onChangeInput} className="mineWidth" />
           <Button type="primary"  onClick={this.BalancePost} icon="search" style={{marginRight:10}}></Button>
           <Button icon="reload" onClick={this.resetBtn}></Button>
        </div>
