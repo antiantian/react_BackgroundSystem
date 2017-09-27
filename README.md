@@ -1,5 +1,4 @@
 ## 技术应用 ##
-`bash
 - react.js
 - react-router
 - react-router-dom
@@ -8,7 +7,7 @@
 - mock.js
 - node+express构建假数据
 - react-dnd-html5-backend拖拽
-  `
+
   
 ## 安装步骤 ##
 	npm install							  // 安装项目依赖，等待安装完成之后
