@@ -62,7 +62,9 @@
 
 	|-- build                            // webpack配置文件
 	|-- config                           // 项目打包路径
-	|-- src                              // 源码目录
+	|   |--mock                          // mock.js模拟数据
+	|   |--routes                        // node，api路径
+	|-- src                              // 源码目录
 	|   |--config                        // 后台api配置文件
 	|   |--index.js                      // 程序入口文件，加载各种公共组件
 	|   |--layout.js                     // 页面入口文件
